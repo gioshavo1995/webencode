@@ -31,8 +31,7 @@ var URLEncoder = {
 
 
 
-
-		function decode() {
+        function decode() {
 
     URLEncoder = {
         decode: function (property) {
@@ -52,13 +51,13 @@ var URLEncoder = {
             }
 
             if (Array.isArray(property)) {
-                var mas = [];
+                var masivi = [];
                 for (var i = 0; i < property.length; i++) {
                     var result = decodeURIComponent(property[i]);
-                    mas.push(result);
+                    masivi.push(result);
                 }
                 console.log(property);
-                console.log(mas);
+                console.log(masivi);
                 return 0;
 
             }
